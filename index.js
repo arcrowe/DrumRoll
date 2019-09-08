@@ -10,11 +10,11 @@ const drums = document.querySelectorAll(".drum")
 
 drums.forEach(function (drum) {
     drum.addEventListener("click", function (ev) {
-        // alert(ev.target.textContent + ' was hit');
-        // alert(this.innerHTML + ' was hit');
-        // console.log(this.innerHTML);
-        // this.style.color="white";
-        // makeSound(this.innerHTML);
+        alert(ev.target.textContent + ' was hit');
+        alert(this.innerHTML + ' was hit');
+        console.log(this.innerHTML);
+        this.style.color="white";
+        makeSound(this.innerHTML);
         makeSound(ev.target.innerHTML);
         buttonAnimation(this.innerHTML);
 
